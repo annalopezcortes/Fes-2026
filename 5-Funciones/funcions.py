@@ -58,7 +58,7 @@ def mostrar_perfil(**kwargs):
 def calcular_factorial(n):
     resultat = 1
     i = 1
-    while i < resultat:
+    while i <= n:
         resultat *= i
         i +=1
     return resultat
@@ -66,7 +66,7 @@ def calcular_factorial(n):
 def trobar_maxim (llista):
     if not llista:
         return None
-    max_num[0]
+    max_num = llista[0]
     for num in llista:
         if num > max_num:
             max_num = num
@@ -80,13 +80,13 @@ def comptar_vocals (text):
     for i in text:
         if i.lower() in "aeiouàèéíòóúïü":
          contador +=1
-return contador
+    return contador
 
 # Exercici 9: Retorn múltiple (mínim i màxim)
 # Crea una funció minim_i_maxim(numeros) que rebi una llista de números i retorni tant el valor
 # mínim com el valor màxim alhora. Desempaqueta el resultat en dues variables.
 def minim_i_maxim(numeros):
-    return minim, maxim
+    return min(numeros), max(numeros)
 
 
 # Exercici 10: Palíndrom
